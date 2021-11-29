@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Home Page Section CSS */
+.main {
+    background-color: black;
+
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    /* height: 250vh; */
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    /* max-width: 1300px; */
+    /* padding: 0 50px; */
+
+}
+
+.main__content {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.main__content h1 {
+    font-size: 3rem;
+    background-color: #fff;
+    /* background-image: linear-gradient(to top, #ff0844 0%,#ffb199 100%); */
+    background-size:  100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+}
+
+.main__content h2{
+    font-size: 3rem;
+    background-color: #fff;
+    /* background-image: linear-gradient(to top, #b721ff 0%,#21d4fd 100%); */
+    background-size:  100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0 850px;
+
+}
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 1050px;
+
+}
+
+.main__btn{
+    font-size: 2.7rem;
+    background-color: #fb2eac;
+    /* background-image: linear-gradient(to top, #f77062 0%, #f77062 100%); */
+    padding: 34px 52px;
+
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-top: 4rem;
+
+}
+/* 
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+} */
+
+.main__btn:after{
+    position: absolute;
+    content:'';
+    /* background: #783679; */
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    /* color: #fff; */
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+
+    /* width: 1600px;    */
+    /* padding: 3rem; */
+    /* height: 1000px; */
+
+}
+
+
+
+#main__img {
+    height: 80%;
+    width: 80%;
+    object-fit: fill;
+}
+
+.vip-header{
+    background-color:#fb2eac;
+}
+
+/* MINT SECTION */
+.mint{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 5rem 0;
+}
+
+.mint h1{
+    background-color: #fff;
+    /* background-image: linear-gradient(to right); */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.mint__wrapper{
+    display:inline-flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.mint__card{
+    margin: 10px;
+    height:125px;
+    width: 600px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    /* background-image: linear-gradient(to right); */
+    transition: 0.3s ease-in;
+}
+
+.mint__card:nth-child(1){
+    background: #fb2eac;
+}
+
+.mint__card:nth-child(2){
+    background:rgb(0, 162, 255);
+
+}
+
+.mint__card:nth-child(3){
+    background: #fff;
+    color: black;
+}
+
+.mint__card h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.mint__card p{
+    text-align: center;
+    margin-top: 14px;
+    font-size: 20px;
+}
+
+
+
+/* availability section */
+.nft__wrapper{
+    display:inline-flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.nft__card{
+    margin: 5px;
+    height:125px;
+    width: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s ease-in;
+    background:black;
+    color: #fff;
+}
+
+.nft__card h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.nft__card p{
+    text-align: center;
+    margin-top: 14px;
+    font-size: 20px;
+}
+
+/* ODDS section */
+.odds__wrapper{
+    display:inline-flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr;
+}
+
+.odds__card{
+    margin: 5px;
+    height:125px;
+    width: 700px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s ease-in;
+    background:black;
+    color: #fff;
+}
+
+
+.odds__card h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.odds__card p{
+    text-align: center;
+    margin-top: 14px;
+    font-size: 20px;
+}
+
+
+/* VIP section */
+.vip{
+    text-align: center;
+    padding-top: 130px;
+    font-size: 50px;
+}
+
+
+.vip h2{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* AIRDROP section */
+.airdrop{
+    text-align: center;
+    padding-top: 130px;
+    font-size: 50px;
+}
+
+
+.airdrop h2{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding: 0 670px;
+}
