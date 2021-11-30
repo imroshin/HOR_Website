@@ -9,6 +9,8 @@
 /* Home Page Section CSS */
 .main {
     background-color: black;
+    font-family: 'Avenir LT Std', sans-serif;
+
 
 }
 
@@ -22,9 +24,10 @@
     height: 100%;
     background-color: black;
     z-index: 1;
-    width: 100%;
+    max-width: 100%;
     /* max-width: 1300px; */
     /* padding: 0 50px; */
+    font-family: 'Avenir LT Std', sans-serif;
 
 }
 
@@ -33,10 +36,9 @@
     margin-bottom: 4rem;
 }
 
-.main__content h1 {
+/* .main__content h1 {
     font-size: 3rem;
     background-color: #fff;
-    /* background-image: linear-gradient(to top, #ff0844 0%,#ffb199 100%); */
     background-size:  100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -45,7 +47,7 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
     
-}
+} */
 
 .main__content h2{
     font-size: 3rem;
@@ -133,8 +135,26 @@
     object-fit: fill;
 }
 
+.main__h1 {
+    font-size: 4rem;
+    background-color: #fff;
+    /* background-image: linear-gradient(to top, #ff0844 0%,#ffb199 100%); */
+    background-size:  100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+}
+
 .vip-header{
-    background-color:#fb2eac;
+    font-size: 4rem;
+    color:#fb2eac;
+    text-align: center;
+    margin-bottom: 4rem;
+                                                
 }
 
 /* MINT SECTION */
@@ -146,6 +166,7 @@
     align-items: center;
     height: 100%;
     padding: 5rem 0;
+    font-family: 'Avenir LT Std', sans-serif;
 }
 
 .mint h1{
@@ -164,9 +185,10 @@
     display:inline-flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    
 }
 
-.mint__card{
+.mint__card1{
     margin: 10px;
     height:125px;
     width: 600px;
@@ -177,20 +199,41 @@
     color: #fff;
     /* background-image: linear-gradient(to right); */
     transition: 0.3s ease-in;
-}
-
-.mint__card:nth-child(1){
     background: #fb2eac;
+    cursor: pointer;
+
 }
 
-.mint__card:nth-child(2){
+.mint__card2{
+    margin: 10px;
+    height:125px;
+    width: 600px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    /* background-image: linear-gradient(to right); */
+    transition: 0.3s ease-in;
     background:rgb(0, 162, 255);
+    cursor: pointer;
 
 }
 
-.mint__card:nth-child(3){
+.mint__card3{
+    margin: 10px;
+    height:125px;
+    width: 600px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    /* background-image: linear-gradient(to right); */
+    transition: 0.3s ease-in;
     background: #fff;
     color: black;
+    cursor: pointer;
 }
 
 .mint__card h2{
@@ -225,11 +268,14 @@
     transition: 0.3s ease-in;
     background:black;
     color: #fff;
+
 }
 
 .nft__card h2{
     text-align: center;
     font-size: 40px;
+    font-family: 'Avenir LT Std', sans-serif;
+
 }
 
 .nft__card p{
@@ -243,6 +289,7 @@
     display:inline-flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0fr;
+    
 }
 
 .odds__card{
@@ -263,6 +310,8 @@
 .odds__card h2{
     text-align: center;
     font-size: 40px;
+    font-family: 'Avenir LT Std', sans-serif;
+
 }
 
 .odds__card p{
@@ -277,6 +326,8 @@
     text-align: center;
     padding-top: 130px;
     font-size: 50px;
+    font-family: 'Avenir LT Std', sans-serif;
+
 }
 
 
@@ -285,6 +336,8 @@
     text-align: center;
     font-size: 30px;
     color: #fff;
+    font-family: 'Avenir LT Std', sans-serif;
+
 }
 
 /* AIRDROP section */
@@ -292,6 +345,7 @@
     text-align: center;
     padding-top: 130px;
     font-size: 50px;
+
 }
 
 
@@ -301,4 +355,29 @@
     font-size: 30px;
     color: #fff;
     padding: 0 670px;
+    font-family: 'Avenir LT Std', sans-serif;
+
 }
+
+.btn{
+    border: none;
+
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (min-width: 576px){
+    /* .modal__content{
+      margin: auto;
+      width: 380px;
+      border-radius: 1.25rem;
+    }
+  
+    .modal__img{
+      width: 170px;
+    } */
+
+
+
+  }  
